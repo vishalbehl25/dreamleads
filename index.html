@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Leads - Your Business Growth Partner</title>
-    
+
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    
+
     <style>
         :root {
-            --primary-blue: #1e3a8a;
+            --primary-blue: #18408b;
             --secondary-blue: #3b82f6;
             --light-blue: #dbeafe;
-            --gradient-blue: linear-gradient(135deg, #000000 0%, #1e3a8a 100%);
+            --gradient-blue: linear-gradient(135deg, #183a83 0%, #1e3a8a 100%);
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+
         .navbar {
             background: var(--gradient-blue) !important;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        
+
         .navbar-brand {
             display: flex;
             align-items: center;
@@ -34,7 +35,7 @@
             color: white !important;
             text-decoration: none;
         }
-        
+
         .logo-container {
             width: 50px;
             height: 50px;
@@ -47,7 +48,7 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .logo-tree {
             width: 25px;
             height: 25px;
@@ -56,7 +57,7 @@
             position: relative;
             z-index: 2;
         }
-        
+
         .logo-tree::before {
             content: '';
             position: absolute;
@@ -69,7 +70,7 @@
             border-right: 8px solid transparent;
             border-bottom: 12px solid #10b981;
         }
-        
+
         .logo-tree::after {
             content: '';
             position: absolute;
@@ -82,20 +83,20 @@
             border-right: 6px solid transparent;
             border-bottom: 10px solid #059669;
         }
-        
+
         .brand-text {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
         }
-        
+
         .brand-name {
             font-size: 1.5rem;
             font-weight: 800;
             line-height: 1;
             margin: 0;
         }
-        
+
         .brand-name .stylized-d {
             display: inline-block;
             background: white;
@@ -105,7 +106,7 @@
             margin-right: 2px;
             font-weight: 900;
         }
-        
+
         .brand-tagline {
             font-size: 0.8rem;
             font-weight: 500;
@@ -115,7 +116,7 @@
             align-items: center;
             gap: 5px;
         }
-        
+
         .navbar-nav .nav-link {
             color: white !important;
             font-weight: 500;
@@ -123,12 +124,12 @@
             transition: all 0.3s ease;
             position: relative;
         }
-        
+
         .navbar-nav .nav-link:hover {
             color: var(--light-blue) !important;
             transform: translateY(-1px);
         }
-        
+
         .navbar-nav .nav-link::after {
             content: '';
             position: absolute;
@@ -140,181 +141,178 @@
             transition: all 0.3s ease;
             transform: translateX(-50%);
         }
-        
+
         .navbar-nav .nav-link:hover::after {
             width: 80%;
         }
-        
+
         .navbar-toggler {
             border: none;
             color: white;
         }
-        
+
         .navbar-toggler:focus {
             box-shadow: none;
         }
-        
+
         .navbar-toggler-icon {
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         }
-        
+
         /* Hero Section */
         .hero-section {
-            background: var(--gradient-blue);
+            background: linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.8)), url('bgfirst.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             color: white;
             padding: 120px 0 100px;
             min-height: 100vh;
             display: flex;
             align-items: center;
+            position: relative;
         }
-        
-        .hero-content {
-            text-align: left;
-        }
-        
+
+
         .hero-title {
-            font-size: 3.2rem;
-            font-weight: 800;
+            font-size: 3.5rem;
+            font-weight: 900;
             margin-bottom: 1.5rem;
-            line-height: 1.2;
+            line-height: 1.1;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
         
         .hero-subtitle {
-            font-size: 1.1rem;
-            opacity: 0.9;
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
             margin-bottom: 2.5rem;
-            line-height: 1.6;
+            line-height: 1.7;
+            font-weight: 500;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
         }
-        
+
+
+
         .hero-buttons {
             display: flex;
             gap: 1rem;
             flex-wrap: wrap;
+            justify-content: center;
         }
-        
+
         .hero-buttons .btn {
-            padding: 12px 30px;
-            font-weight: 600;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-        }
-        
-        .hero-buttons .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-        }
-        
-        /* Hero Image Container */
-        .hero-image-container {
+            padding: 18px 45px;
+            font-weight: 800;
+            border-radius: 50px;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-shadow: none;
             position: relative;
-            height: 500px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .hero-image-box {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .image-placeholder {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            text-align: center;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            position: relative;
-            z-index: 2;
-            max-width: 300px;
-            width: 100%;
-        }
-        
-        .image-placeholder h4 {
-            color: var(--primary-blue);
-            font-weight: 700;
-            margin: 20px 0 10px;
-        }
-        
-        .image-placeholder p {
-            color: #666;
-            margin: 0;
-        }
-        
-        /* Floating Elements */
-        .floating-elements {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-        }
-        
-        .floating-card {
-            position: absolute;
-            background: white;
-            border-radius: 15px;
-            padding: 15px 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 600;
-            color: var(--primary-blue);
-            min-width: 140px;
-        }
-        
-        .floating-card i {
+            overflow: hidden;
             font-size: 1.2rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: none;
         }
         
-        .floating-card span {
-            font-size: 0.9rem;
+        .hero-buttons .btn-light {
+            background: linear-gradient(135deg, #10b981 0%, #06b6d4 50%, #3b82f6 100%);
+            color: white;
+            box-shadow: 0 15px 35px rgba(16, 185, 129, 0.4), 0 5px 15px rgba(0, 0, 0, 0.2);
         }
         
-        .card-1 {
-            top: 10%;
-            right: 10%;
-            animation: float1 3s ease-in-out infinite;
+        .hero-buttons .btn-light:hover {
+            transform: translateY(-5px) scale(1.08);
+            box-shadow: 0 25px 50px rgba(16, 185, 129, 0.6), 0 10px 25px rgba(0, 0, 0, 0.3);
+            color: white;
         }
         
-        .card-2 {
-            bottom: 20%;
-            left: 5%;
-            animation: float2 3s ease-in-out infinite 1s;
+        .hero-buttons .btn-outline-light {
+            background: transparent;
+            border: 3px solid #10b981;
+            color: #10b981;
+            box-shadow: 0 15px 35px rgba(16, 185, 129, 0.2), 0 5px 15px rgba(0, 0, 0, 0.1);
         }
         
-        .card-3 {
-            top: 60%;
-            right: 5%;
-            animation: float3 3s ease-in-out infinite 2s;
+        .hero-buttons .btn-outline-light:hover {
+            background: linear-gradient(135deg, #10b981 0%, #06b6d4 50%, #3b82f6 100%);
+            border-color: transparent;
+            color: white;
+            transform: translateY(-5px) scale(1.08);
+            box-shadow: 0 25px 50px rgba(16, 185, 129, 0.6), 0 10px 25px rgba(0, 0, 0, 0.3);
         }
         
-        @keyframes float1 {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-10px) rotate(2deg); }
+        .hero-buttons .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.8s;
         }
         
-        @keyframes float2 {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-15px) rotate(-1deg); }
+        .hero-buttons .btn:hover::before {
+            left: 100%;
         }
         
-        @keyframes float3 {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-8px) rotate(1deg); }
+        .hero-buttons .btn::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.6s ease;
         }
         
+        .hero-buttons .btn:hover::after {
+            width: 100%;
+            height: 300px;
+        }
+        
+        .hero-buttons .btn i {
+            margin-right: 8px;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .hero-buttons .btn:hover i {
+            transform: scale(1.2) rotate(5deg);
+        }
+        
+        .hero-buttons .btn-outline-light:hover i {
+            transform: translateX(3px) scale(1.2);
+        }
+        
+        /* Button pulse animation */
+        @keyframes buttonPulse {
+            0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+        
+        .hero-buttons .btn-light {
+            animation: buttonPulse 2s infinite;
+        }
+        
+        .hero-buttons .btn-light:hover {
+            animation: none;
+        }
+
+
         /* Features Section */
         .features-section {
             padding: 100px 0;
             background: #f8fafc;
         }
-        
+
         .features-main-title {
             font-size: 2.8rem;
             font-weight: 800;
@@ -322,7 +320,7 @@
             margin-bottom: 3rem;
             position: relative;
         }
-        
+
         .features-main-title::after {
             content: '';
             position: absolute;
@@ -334,19 +332,19 @@
             background: var(--gradient-blue);
             border-radius: 2px;
         }
-        
+
         .feature-card {
             background: white;
             border-radius: 20px;
             padding: 40px 30px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             transition: all 0.3s ease;
             height: 100%;
             position: relative;
             overflow: hidden;
         }
-        
+
         .feature-card::before {
             content: '';
             position: absolute;
@@ -358,16 +356,16 @@
             transform: scaleX(0);
             transition: transform 0.3s ease;
         }
-        
+
         .feature-card:hover::before {
             transform: scaleX(1);
         }
-        
+
         .feature-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
-        
+
         .feature-icon {
             width: 80px;
             height: 80px;
@@ -380,16 +378,16 @@
             position: relative;
             transition: all 0.3s ease;
         }
-        
+
         .feature-icon i {
             font-size: 2rem;
             color: white;
         }
-        
+
         .feature-card:hover .feature-icon {
             transform: scale(1.1) rotate(5deg);
         }
-        
+
         .feature-title {
             font-size: 1.5rem;
             font-weight: 700;
@@ -397,24 +395,24 @@
             margin-bottom: 15px;
             transition: color 0.3s ease;
         }
-        
+
         .feature-card:hover .feature-title {
             color: var(--secondary-blue);
         }
-        
+
         .feature-description {
             color: #666;
             line-height: 1.6;
             margin: 0;
             font-size: 1rem;
         }
-        
+
         /* Leads Section */
         .leads-section {
             padding: 100px 0;
             background: white;
         }
-        
+
         .leads-main-title {
             font-size: 2.8rem;
             font-weight: 800;
@@ -422,7 +420,7 @@
             margin-bottom: 3rem;
             line-height: 1.3;
         }
-        
+
         .lead-feature-card {
             background: #f8fafc;
             border-radius: 20px;
@@ -433,13 +431,13 @@
             height: 100%;
             position: relative;
         }
-        
+
         .lead-feature-card:hover {
             border-color: var(--secondary-blue);
             transform: translateY(-5px);
             box-shadow: 0 15px 35px rgba(59, 130, 246, 0.15);
         }
-        
+
         .lead-feature-icon {
             width: 80px;
             height: 80px;
@@ -451,30 +449,30 @@
             margin: 0 auto 25px;
             transition: all 0.3s ease;
         }
-        
+
         .lead-feature-icon i {
             font-size: 2rem;
             color: white;
         }
-        
+
         .lead-feature-card:hover .lead-feature-icon {
             transform: scale(1.1) rotate(5deg);
         }
-        
+
         .lead-feature-title {
             font-size: 1.5rem;
             font-weight: 700;
             color: var(--primary-blue);
             margin-bottom: 15px;
         }
-        
+
         .lead-feature-description {
             color: #666;
             line-height: 1.6;
             margin: 0;
             font-size: 1rem;
         }
-        
+
         /* Benefits Section */
         .benefits-section {
             background: var(--gradient-blue);
@@ -483,14 +481,14 @@
             margin-top: 50px;
             color: white;
         }
-        
+
         .benefits-title {
             font-size: 2.2rem;
             font-weight: 700;
             color: white;
             margin-bottom: 2rem;
         }
-        
+
         .benefit-item {
             background: rgba(255, 255, 255, 0.1);
             border-radius: 15px;
@@ -502,17 +500,17 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
-        
+
         .benefit-item:hover {
             background: rgba(255, 255, 255, 0.2);
             transform: translateY(-3px);
         }
-        
+
         .benefit-item-full {
             justify-content: center;
             text-align: center;
         }
-        
+
         .benefit-icon {
             width: 60px;
             height: 60px;
@@ -523,29 +521,29 @@
             justify-content: center;
             flex-shrink: 0;
         }
-        
+
         .benefit-icon i {
             font-size: 1.5rem;
             color: white;
         }
-        
+
         .benefit-content {
             flex: 1;
         }
-        
+
         .benefit-item-title {
             font-size: 1.2rem;
             font-weight: 600;
             color: white;
             margin-bottom: 8px;
         }
-        
+
         .benefit-description {
             color: rgba(255, 255, 255, 0.9);
             margin: 0;
             font-size: 1rem;
         }
-        
+
         /* Ownership Section */
         .ownership-section {
             background: #f8fafc;
@@ -554,14 +552,14 @@
             margin: 50px 0;
             border-left: 5px solid var(--secondary-blue);
         }
-        
+
         .ownership-title {
             font-size: 2.2rem;
             font-weight: 700;
             color: var(--primary-blue);
             margin-bottom: 1.5rem;
         }
-        
+
         .ownership-description {
             font-size: 1.1rem;
             color: #666;
@@ -570,36 +568,36 @@
             max-width: 800px;
             margin: 0 auto;
         }
-        
+
         /* Additional Benefits Section */
         .additional-benefits-section {
             margin-top: 50px;
         }
-        
+
         .additional-benefits-title {
             font-size: 2.2rem;
             font-weight: 700;
             color: var(--primary-blue);
             margin-bottom: 2rem;
         }
-        
+
         .additional-benefit-card {
             background: white;
             border-radius: 20px;
             padding: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             transition: all 0.3s ease;
             height: 100%;
             position: relative;
             border: 2px solid transparent;
         }
-        
+
         .additional-benefit-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
             border-color: var(--secondary-blue);
         }
-        
+
         .benefit-number {
             position: absolute;
             top: -15px;
@@ -616,11 +614,11 @@
             font-size: 1.2rem;
             box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
         }
-        
+
         .benefit-content {
             margin-top: 20px;
         }
-        
+
         .benefit-card-title {
             font-size: 1.3rem;
             font-weight: 700;
@@ -628,20 +626,20 @@
             margin-bottom: 15px;
             line-height: 1.3;
         }
-        
+
         .benefit-text {
             color: #666;
             line-height: 1.6;
             margin: 0;
             font-size: 1rem;
         }
-        
+
         .benefit-list {
             list-style: none;
             padding: 0;
             margin: 0;
         }
-        
+
         .benefit-list li {
             color: #666;
             line-height: 1.6;
@@ -649,7 +647,7 @@
             padding-left: 20px;
             position: relative;
         }
-        
+
         .benefit-list li::before {
             content: '✓';
             position: absolute;
@@ -657,16 +655,16 @@
             color: var(--secondary-blue);
             font-weight: bold;
         }
-        
+
         .benefit-list li:last-child {
             margin-bottom: 0;
         }
-        
+
         /* Content Sections */
         .content-section {
             padding: 80px 0;
         }
-        
+
         .section-title {
             font-size: 2.5rem;
             font-weight: 700;
@@ -674,180 +672,170 @@
             margin-bottom: 2rem;
             text-align: center;
         }
-        
+
         /* Footer */
         .footer {
             background: var(--primary-blue);
             color: white;
             padding: 50px 0 30px;
         }
-        
+
         .footer h5 {
             color: white;
             margin-bottom: 1rem;
         }
-        
+
         .footer a {
             color: var(--light-blue);
             text-decoration: none;
             transition: color 0.3s ease;
         }
-        
+
         .footer a:hover {
             color: white;
         }
-        
+
         @media (max-width: 768px) {
             .hero-title {
                 font-size: 2.2rem;
             }
-            
+
             .hero-subtitle {
                 font-size: 1rem;
             }
-            
-            .hero-content {
-                text-align: center;
-                margin-bottom: 3rem;
+
+            .hero-title {
+                font-size: 2.5rem;
             }
             
+            .hero-buttons .btn {
+                padding: 16px 35px;
+                font-size: 1rem;
+                letter-spacing: 0.5px;
+            }
+            
+            .hero-buttons .btn i {
+                font-size: 1rem;
+            }
+
             .hero-buttons {
                 justify-content: center;
             }
             
-            .hero-image-container {
-                height: 400px;
+            .hero-section {
+                background-attachment: scroll;
             }
-            
-            .floating-card {
-                min-width: 120px;
-                padding: 10px 15px;
-            }
-            
-            .card-1 {
-                top: 5%;
-                right: 5%;
-            }
-            
-            .card-2 {
-                bottom: 15%;
-                left: 2%;
-            }
-            
-            .card-3 {
-                top: 50%;
-                right: 2%;
-            }
-            
+
+
             .brand-name {
                 font-size: 1.2rem;
             }
-            
+
             .brand-tagline {
                 font-size: 0.7rem;
             }
-            
+
             /* Features Section Mobile */
             .features-main-title {
                 font-size: 2.2rem;
             }
-            
+
             .feature-card {
                 padding: 30px 20px;
                 margin-bottom: 2rem;
             }
-            
+
             .feature-icon {
                 width: 70px;
                 height: 70px;
                 margin-bottom: 20px;
             }
-            
+
             .feature-icon i {
                 font-size: 1.8rem;
             }
-            
+
             .feature-title {
                 font-size: 1.3rem;
             }
-            
+
             /* Leads Section Mobile */
             .leads-main-title {
                 font-size: 2.2rem;
             }
-            
+
             .lead-feature-card {
                 padding: 30px 20px;
                 margin-bottom: 2rem;
             }
-            
+
             .lead-feature-icon {
                 width: 70px;
                 height: 70px;
                 margin-bottom: 20px;
             }
-            
+
             .lead-feature-icon i {
                 font-size: 1.8rem;
             }
-            
+
             .lead-feature-title {
                 font-size: 1.3rem;
             }
-            
+
             .benefits-section {
                 padding: 30px 20px;
                 margin-top: 30px;
             }
-            
+
             .benefits-title {
                 font-size: 1.8rem;
             }
-            
+
             .benefit-item {
                 padding: 20px;
                 flex-direction: column;
                 text-align: center;
                 gap: 15px;
             }
-            
+
             .benefit-item-full {
                 flex-direction: row;
             }
-            
+
             .benefit-icon {
                 width: 50px;
                 height: 50px;
             }
-            
+
             .benefit-icon i {
                 font-size: 1.2rem;
             }
-            
+
             /* Ownership Section Mobile */
             .ownership-section {
                 padding: 30px 20px;
                 margin: 30px 0;
             }
-            
+
             .ownership-title {
                 font-size: 1.8rem;
             }
-            
+
             .ownership-description {
                 font-size: 1rem;
             }
-            
+
             /* Additional Benefits Mobile */
             .additional-benefits-title {
                 font-size: 1.8rem;
             }
-            
+
             .additional-benefit-card {
                 padding: 25px 20px;
                 margin-bottom: 2rem;
             }
-            
+
             .benefit-number {
                 width: 35px;
                 height: 35px;
@@ -855,17 +843,18 @@
                 top: -12px;
                 left: 20px;
             }
-            
+
             .benefit-card-title {
                 font-size: 1.1rem;
             }
-            
+
             .benefit-text {
                 font-size: 0.9rem;
             }
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -883,11 +872,11 @@
                     </p>
                 </div>
             </a>
-            
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -915,45 +904,25 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="hero-content">
-                        <h1 class="hero-title">With Dream Leads Solution get all your marketing solutions at one place.</h1>
-                        <p class="hero-subtitle">Getting stuck on your responsive Service interface? Dream Leads Solution gives you the leisure of choosing from countless interactive features that connect you directly to your customers.</p>
-                        <div class="hero-buttons">
-                            <a href="#contact" class="btn btn-light btn-lg me-3">Get Started Today</a>
-                            <a href="#services" class="btn btn-outline-light btn-lg">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="hero-image-container">
-                        <div class="hero-image-box">
-                            <div class="image-placeholder">
-                                <i class="bi bi-graph-up-arrow" style="font-size: 4rem; color: var(--primary-blue);"></i>
-                                <h4>Marketing Analytics</h4>
-                                <p>Track your success with real-time data</p>
-                            </div>
-                            <div class="floating-elements">
-                                <div class="floating-card card-1">
-                                    <i class="bi bi-people-fill"></i>
-                                    <span>Lead Generation</span>
-                                </div>
-                                <div class="floating-card card-2">
-                                    <i class="bi bi-bar-chart-fill"></i>
-                                    <span>Analytics</span>
-                                </div>
-                                <div class="floating-card card-3">
-                                    <i class="bi bi-telephone-fill"></i>
-                                    <span>Support</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+         <div class="container">
+             <div class="row align-items-center">
+                 <div class="col-lg-8 mx-auto text-center">
+                     <h1 class="hero-title">With Dream Leads Solution get all your marketing solutions at one place.</h1>
+                     <p class="hero-subtitle">Getting stuck on your responsive Service interface? Dream Leads Solution
+                         gives you the leisure of choosing from countless interactive features that connect you directly
+                         to your customers.</p>
+                     <div class="hero-buttons">
+                         <a href="#contact" class="btn btn-light btn-lg me-3">
+                             <i class="bi bi-rocket-takeoff"></i>Get Started Today
+                         </a>
+                         <a href="#services" class="btn btn-outline-light btn-lg">
+                             <i class="bi bi-arrow-right"></i>Learn More
+                         </a>
+                     </div>
+                 </div>
+             </div>
+         </div>
     </section>
 
     <!-- Features Section -->
@@ -971,7 +940,8 @@
                             <i class="bi bi-headset"></i>
                         </div>
                         <h4 class="feature-title">Helpful Support</h4>
-                        <p class="feature-description">We are available to help our client with 24*7 Support over a single phone Call</p>
+                        <p class="feature-description">We are available to help our client with 24*7 Support over a
+                            single phone Call</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -980,7 +950,8 @@
                             <i class="bi bi-people-fill"></i>
                         </div>
                         <h4 class="feature-title">Friendly Staff</h4>
-                        <p class="feature-description">Listen to your requirements, Provide our clients with the possible causes of their needs, and help them find the right path.</p>
+                        <p class="feature-description">Listen to your requirements, Provide our clients with the
+                            possible causes of their needs, and help them find the right path.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -989,7 +960,8 @@
                             <i class="bi bi-file-text-fill"></i>
                         </div>
                         <h4 class="feature-title">Great Documentation</h4>
-                        <p class="feature-description">Anything we do, will provide you in written documents and in legitimate way.</p>
+                        <p class="feature-description">Anything we do, will provide you in written documents and in
+                            legitimate way.</p>
                     </div>
                 </div>
             </div>
@@ -1001,10 +973,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center mb-5">
-                    <h2 class="leads-main-title">Keep our clients busy with fresh exclusive and highly qualified leads</h2>
+                    <h2 class="leads-main-title">Keep our clients busy with fresh exclusive and highly qualified leads
+                    </h2>
                 </div>
             </div>
-            
+
             <!-- Features Grid -->
             <div class="row mb-5">
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -1013,31 +986,38 @@
                             <i class="bi bi-shield-check"></i>
                         </div>
                         <h4 class="lead-feature-title">Exclusivity</h4>
-                        <p class="lead-feature-description">Dream Leads Solution will give exclusive rights of Lead in your desired area and cannot send that to any other Real Estate Agent or Companies in the mentioned areas.</p>
+                        <p class="lead-feature-description">Dream Leads Solution will give exclusive rights of Lead in
+                            your desired area and cannot send that to any other Real Estate Agent or Companies in the
+                            mentioned areas.</p>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="lead-feature-card">
                         <div class="lead-feature-icon">
                             <i class="bi bi-arrow-repeat"></i>
                         </div>
                         <h4 class="lead-feature-title">Replacement</h4>
-                        <p class="lead-feature-description">Dream Leads Solution agrees to replace the lead in case the customer is not interested in talking to the Real Estate Agent then those lead will not be counted in your account.</p>
+                        <p class="lead-feature-description">Dream Leads Solution agrees to replace the lead in case the
+                            customer is not interested in talking to the Real Estate Agent then those lead will not be
+                            counted in your account.</p>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="lead-feature-card">
                         <div class="lead-feature-icon">
                             <i class="bi bi-graph-up-arrow"></i>
                         </div>
                         <h4 class="lead-feature-title">Analytics-driven Approach</h4>
-                        <p class="lead-feature-description">Our analytics-driven approach towards mortgage and Real Estate lead generation helps to engage and identify the right mix of mortgage and Real Estate leads thereby increasing your conversion rate and boosting profits i.e 12 to 15% conversion rates from the leads.</p>
+                        <p class="lead-feature-description">Our analytics-driven approach towards mortgage and Real
+                            Estate lead generation helps to engage and identify the right mix of mortgage and Real
+                            Estate leads thereby increasing your conversion rate and boosting profits i.e 12 to 15%
+                            conversion rates from the leads.</p>
                     </div>
                 </div>
             </div>
-            
+
             <!-- Benefits Section -->
             <div class="benefits-section">
                 <div class="row">
@@ -1045,7 +1025,7 @@
                         <h3 class="benefits-title">Benefits</h3>
                     </div>
                 </div>
-                
+
                 <div class="row">
                     <div class="col-lg-6 col-md-6 mb-4">
                         <div class="benefit-item">
@@ -1058,7 +1038,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-6 col-md-6 mb-4">
                         <div class="benefit-item">
                             <div class="benefit-icon">
@@ -1070,7 +1050,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-6 col-md-6 mb-4">
                         <div class="benefit-item">
                             <div class="benefit-icon">
@@ -1082,7 +1062,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-6 col-md-6 mb-4">
                         <div class="benefit-item">
                             <div class="benefit-icon">
@@ -1094,7 +1074,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-12 mb-4">
                         <div class="benefit-item benefit-item-full">
                             <div class="benefit-icon">
@@ -1102,23 +1082,27 @@
                             </div>
                             <div class="benefit-content">
                                 <h5 class="benefit-item-title">Hours of Dialling</h5>
-                                <p class="benefit-description">8 hours of dialling, 5 days a week from Monday to Friday</p>
+                                <p class="benefit-description">8 hours of dialling, 5 days a week from Monday to Friday
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <!-- Complete Ownership Section -->
             <div class="ownership-section">
                 <div class="row">
                     <div class="col-lg-12 text-center mb-5">
                         <h3 class="ownership-title">Complete Ownership of Leads</h3>
-                        <p class="ownership-description">We do not deal with old contact lists and do not promote any commission sharing. We help to create fresh leads which you own 100%. We ensure that once the lead has been shared to any of the clients it cannot be shared to any other client i.e.</p>
+                        <p class="ownership-description">We do not deal with old contact lists and do not promote any
+                            commission sharing. We help to create fresh leads which you own 100%. We ensure that once
+                            the lead has been shared to any of the clients it cannot be shared to any other client i.e.
+                        </p>
                     </div>
                 </div>
             </div>
-            
+
             <!-- Additional Benefits Section -->
             <div class="additional-benefits-section">
                 <div class="row">
@@ -1126,7 +1110,7 @@
                         <h3 class="additional-benefits-title">Additional Benefits</h3>
                     </div>
                 </div>
-                
+
                 <div class="row">
                     <div class="col-lg-6 col-md-6 mb-4">
                         <div class="additional-benefit-card">
@@ -1135,39 +1119,45 @@
                                 <h5 class="benefit-card-title">Three steps of Pre-qualification of Leads</h5>
                                 <ul class="benefit-list">
                                     <li><strong>(A)</strong> Getting Leads from Social Media</li>
-                                    <li><strong>(B)</strong> Verifying the intent of the customer our expert telecaller</li>
-                                    <li><strong>(C)</strong> Getting the quality certificate from the Quality experts</li>
+                                    <li><strong>(B)</strong> Verifying the intent of the customer our expert telecaller
+                                    </li>
+                                    <li><strong>(C)</strong> Getting the quality certificate from the Quality experts
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-6 col-md-6 mb-4">
                         <div class="additional-benefit-card">
                             <div class="benefit-number">2</div>
                             <div class="benefit-content">
                                 <h5 class="benefit-card-title">Booking Telephonic Appointments with customers</h5>
-                                <p class="benefit-text">In Dream Leads Solution our experts get in touch with the customer first and then book a telephonic appointment for our Clients.</p>
+                                <p class="benefit-text">In Dream Leads Solution our experts get in touch with the
+                                    customer first and then book a telephonic appointment for our Clients.</p>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-6 col-md-6 mb-4">
                         <div class="additional-benefit-card">
                             <div class="benefit-number">3</div>
                             <div class="benefit-content">
                                 <h5 class="benefit-card-title">Rescheduling of the Appointment</h5>
-                                <p class="benefit-text">If somehow our clients miss to connect with the customer at the scheduled appointment we provide the benefits of Re-scheduling the appointment.</p>
+                                <p class="benefit-text">If somehow our clients miss to connect with the customer at the
+                                    scheduled appointment we provide the benefits of Re-scheduling the appointment.</p>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-6 col-md-6 mb-4">
                         <div class="additional-benefit-card">
                             <div class="benefit-number">4</div>
                             <div class="benefit-content">
                                 <h5 class="benefit-card-title">Lead Replacements</h5>
-                                <p class="benefit-text">Dream Leads Solution agrees to replace the lead in case the customer is not interested in talking to the Real Estate Agent then those lead will not be counted in your account.</p>
+                                <p class="benefit-text">Dream Leads Solution agrees to replace the lead in case the
+                                    customer is not interested in talking to the Real Estate Agent then those lead will
+                                    not be counted in your account.</p>
                             </div>
                         </div>
                     </div>
@@ -1182,7 +1172,8 @@
             <h2 class="section-title">About Us</h2>
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-                    <p class="lead">Dream Leads is dedicated to helping businesses grow through innovative lead generation strategies and exceptional customer service.</p>
+                    <p class="lead">Dream Leads is dedicated to helping businesses grow through innovative lead
+                        generation strategies and exceptional customer service.</p>
                 </div>
             </div>
         </div>
@@ -1198,7 +1189,8 @@
                         <div class="card-body text-center">
                             <i class="bi bi-graph-up text-primary" style="font-size: 3rem;"></i>
                             <h5 class="card-title mt-3">Lead Generation</h5>
-                            <p class="card-text">Comprehensive lead generation strategies to boost your business growth.</p>
+                            <p class="card-text">Comprehensive lead generation strategies to boost your business growth.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -1207,7 +1199,8 @@
                         <div class="card-body text-center">
                             <i class="bi bi-people text-primary" style="font-size: 3rem;"></i>
                             <h5 class="card-title mt-3">Customer Acquisition</h5>
-                            <p class="card-text">Targeted approaches to acquire high-quality customers for your business.</p>
+                            <p class="card-text">Targeted approaches to acquire high-quality customers for your
+                                business.</p>
                         </div>
                     </div>
                 </div>
@@ -1216,7 +1209,8 @@
                         <div class="card-body text-center">
                             <i class="bi bi-bar-chart text-primary" style="font-size: 3rem;"></i>
                             <h5 class="card-title mt-3">Analytics & Reporting</h5>
-                            <p class="card-text">Detailed analytics and reporting to track your success and optimize performance.</p>
+                            <p class="card-text">Detailed analytics and reporting to track your success and optimize
+                                performance.</p>
                         </div>
                     </div>
                 </div>
@@ -1230,7 +1224,8 @@
             <h2 class="section-title">Privacy Policy</h2>
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <p>We are committed to protecting your privacy and ensuring the security of your personal information. Our privacy policy outlines how we collect, use, and protect your data.</p>
+                    <p>We are committed to protecting your privacy and ensuring the security of your personal
+                        information. Our privacy policy outlines how we collect, use, and protect your data.</p>
                 </div>
             </div>
         </div>
@@ -1242,7 +1237,8 @@
             <h2 class="section-title">Terms of Services</h2>
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <p>Please read our terms of service carefully before using our services. These terms govern your use of Dream Leads and our services.</p>
+                    <p>Please read our terms of service carefully before using our services. These terms govern your use
+                        of Dream Leads and our services.</p>
                 </div>
             </div>
         </div>
@@ -1276,7 +1272,8 @@
                                     <input type="email" class="form-control" placeholder="Your Email" required>
                                 </div>
                                 <div class="mb-3">
-                                    <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                                    <textarea class="form-control" rows="4" placeholder="Your Message"
+                                        required></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Send Message</button>
                             </form>
@@ -1323,84 +1320,36 @@
     <!-- GSAP Animation Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    
+
     <script>
         // Register GSAP ScrollTrigger plugin
         gsap.registerPlugin(ScrollTrigger);
 
         // Hero Section GSAP Animations
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             // Hero content animations
             const tl = gsap.timeline();
-            
+
             tl.from('.hero-title', {
                 duration: 1.2,
                 y: 100,
                 opacity: 0,
                 ease: 'power3.out'
             })
-            .from('.hero-subtitle', {
-                duration: 1,
-                y: 50,
-                opacity: 0,
-                ease: 'power2.out'
-            }, '-=0.8')
-            .from('.hero-buttons', {
-                duration: 0.8,
-                y: 30,
-                opacity: 0,
-                ease: 'power2.out'
-            }, '-=0.6');
+                .from('.hero-subtitle', {
+                    duration: 1,
+                    y: 50,
+                    opacity: 0,
+                    ease: 'power2.out'
+                }, '-=0.8')
+                .from('.hero-buttons', {
+                    duration: 0.8,
+                    y: 30,
+                    opacity: 0,
+                    ease: 'power2.out'
+                }, '-=0.6');
 
-            // Hero image animations
-            gsap.from('.image-placeholder', {
-                duration: 1.5,
-                scale: 0.8,
-                opacity: 0,
-                rotation: 5,
-                ease: 'power3.out',
-                delay: 0.5
-            });
 
-            // Floating cards staggered animation
-            gsap.from('.floating-card', {
-                duration: 1,
-                y: 50,
-                opacity: 0,
-                stagger: 0.3,
-                ease: 'power2.out',
-                delay: 1
-            });
-
-            // Continuous floating animation for cards
-            gsap.to('.card-1', {
-                y: -10,
-                rotation: 2,
-                duration: 2,
-                ease: 'power1.inOut',
-                yoyo: true,
-                repeat: -1
-            });
-
-            gsap.to('.card-2', {
-                y: -15,
-                rotation: -1,
-                duration: 2.5,
-                ease: 'power1.inOut',
-                yoyo: true,
-                repeat: -1,
-                delay: 0.5
-            });
-
-            gsap.to('.card-3', {
-                y: -8,
-                rotation: 1,
-                duration: 1.8,
-                ease: 'power1.inOut',
-                yoyo: true,
-                repeat: -1,
-                delay: 1
-            });
         });
 
         // Section animations on scroll
@@ -1467,15 +1416,15 @@
 
         // Feature card hover animations
         gsap.utils.toArray('.feature-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
+            card.addEventListener('mouseenter', function () {
                 gsap.to(this, {
                     duration: 0.3,
                     scale: 1.02,
                     ease: 'power2.out'
                 });
             });
-            
-            card.addEventListener('mouseleave', function() {
+
+            card.addEventListener('mouseleave', function () {
                 gsap.to(this, {
                     duration: 0.3,
                     scale: 1,
@@ -1546,15 +1495,15 @@
 
         // Lead feature card hover animations
         gsap.utils.toArray('.lead-feature-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
+            card.addEventListener('mouseenter', function () {
                 gsap.to(this, {
                     duration: 0.3,
                     scale: 1.02,
                     ease: 'power2.out'
                 });
             });
-            
-            card.addEventListener('mouseleave', function() {
+
+            card.addEventListener('mouseleave', function () {
                 gsap.to(this, {
                     duration: 0.3,
                     scale: 1,
@@ -1623,15 +1572,15 @@
 
         // Additional benefit card hover animations
         gsap.utils.toArray('.additional-benefit-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
+            card.addEventListener('mouseenter', function () {
                 gsap.to(this, {
                     duration: 0.3,
                     scale: 1.02,
                     ease: 'power2.out'
                 });
             });
-            
-            card.addEventListener('mouseleave', function() {
+
+            card.addEventListener('mouseleave', function () {
                 gsap.to(this, {
                     duration: 0.3,
                     scale: 1,
@@ -1659,7 +1608,7 @@
         });
 
         // Navbar background change on scroll
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 50) {
                 navbar.style.background = 'rgba(30, 58, 138, 0.95)';
@@ -1671,9 +1620,9 @@
         });
 
         // Form submission
-        document.querySelector('form').addEventListener('submit', function(e) {
+        document.querySelector('form').addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             // Animate form submission
             gsap.to(this, {
                 duration: 0.3,
@@ -1681,7 +1630,7 @@
                 yoyo: true,
                 repeat: 1,
                 ease: 'power2.inOut',
-                onComplete: function() {
+                onComplete: function () {
                     alert('Thank you for your message! We will get back to you soon.');
                 }
             });
@@ -1689,15 +1638,15 @@
 
         // Button hover animations
         document.querySelectorAll('.btn').forEach(btn => {
-            btn.addEventListener('mouseenter', function() {
+            btn.addEventListener('mouseenter', function () {
                 gsap.to(this, {
                     duration: 0.3,
                     scale: 1.05,
                     ease: 'power2.out'
                 });
             });
-            
-            btn.addEventListener('mouseleave', function() {
+
+            btn.addEventListener('mouseleave', function () {
                 gsap.to(this, {
                     duration: 0.3,
                     scale: 1,
@@ -1707,4 +1656,5 @@
         });
     </script>
 </body>
+
 </html>
